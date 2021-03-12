@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `counties`
 --
 
-CREATE TABLE `counties` (
+CREATE TABLE IF NOT EXISTS `counties` (
   `county_code` int(11) NOT NULL,
   `county_name` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
